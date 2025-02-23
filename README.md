@@ -3,7 +3,7 @@
 FireChat is a real-time chat application built with React and Firebase.
 
 ## Setup
-
+   
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/firechat.git
