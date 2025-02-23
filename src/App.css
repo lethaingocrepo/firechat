@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1e1e1e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,134 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button, .logout-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover, .logout-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #3a3a3a;
+  color: white;
+  padding: 20px;
+  border-right: 1px solid #444;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sidebar li .avatar {
+  margin-right: 10px;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.messages {
+  flex: 1;
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #444;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-input {
+  display: flex;
+  width: 100%;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.message-input input[type="file"] {
+  margin-right: 10px;
+  color: white;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+  background-color: #0056b3;
 }
